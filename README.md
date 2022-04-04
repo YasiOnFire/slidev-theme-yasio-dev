@@ -1,30 +1,17 @@
-# slidev-theme-yasio-dev-theme
+# slidev-theme-yasio-dev
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-yasio-dev-theme?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-yasio-dev-theme)
+[![NPM version](https://img.shields.io/npm/v/slidev-theme-yasio-dev?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-yasio-dev)
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
+A Yasio.dev theme for [Slidev](https://github.com/slidevjs/slidev).
 
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/themes/write-a-theme.html
---->
-
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+Live demo: [...]
 
 ## Install
 
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
 
 <pre><code>---
-theme: <b>yasio-dev-theme</b>
+theme: <b>yasio-dev</b>
 ---</code></pre>
 
 Learn more about [how to use a theme](https://sli.dev/themes/use).

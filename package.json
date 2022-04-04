@@ -33,7 +33,7 @@
   "homepage": "https://yasio.dev/",
    "repository": {
     "type": "git",
-    "url": "git+https://github.com/alvarosaburido/slidev-theme-penguin.git"
+    "url": "git+https://github.com/YasiOnFire/slidev-theme-yasio-dev.git"
   },
   "slidev": {
     "colorSchema": "dark",
