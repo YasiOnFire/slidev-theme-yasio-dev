@@ -1,17 +1,36 @@
 ---
 theme: ./
 highliter: prism
+randomizeBg: false
+twitter: YasiOnFire
+github: YasiOnFire
+web: yasio.dev
+linkedin: janbaszczok
 ---
-
 # Yasio.dev Theme
 
 Presentation slides for developers
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+---
+layout: intro
+randomizeBg: false
+twitter: YasiOnFire
+github: YasiOnFire
+web: yasio.dev
+linkedin: janbaszczok
+---
+
+# 👋🏻
+
+Hi, my name is <strong style="color:#5918df" class="text-3xl">Jan Baszczok</strong>
+
+i ***design*** and `develop` web apps,
+
+mobile, webpages, motion, and more.
+
+<!--
+tes
+-->
 
 ---
 
@@ -79,9 +98,25 @@ function updateUser(
 
 ---
 layout: center
+randomizeBg: true
 class: "text-center"
 ---
 
 # Learn More
 
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+
+---
+layout: center
+class: "text-center"
+enableFooter: true
+randomizeBg: false
+twitter: YasiOnFire
+github: YasiOnFire
+web: yasio.dev
+linkedin: janbaszczok
+---
+
+# Thank you
+
+<span class="opacity-70 text-primary">I remain, [Yasio](https://yasio.dev)</span>
