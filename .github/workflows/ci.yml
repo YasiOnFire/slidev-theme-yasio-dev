@@ -1,0 +1,21 @@
+name: CI
+on:
+  pull_request:
+    branches:
+      - master
+      - feature
+jobs:
+  check:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Deps
+        run: yarn
+      - name: Build
+        run: yarn build

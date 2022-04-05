@@ -14,6 +14,7 @@
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
+    "semantic-release": "semantic-release",
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
@@ -24,14 +25,15 @@
   },
   "devDependencies": {
     "@slidev/cli": "^0.29.2",
-    "playwright-chromium": "^1.20.2"
+    "playwright-chromium": "^1.20.2",
+    "semantic-release": "^19.0.2"
   },
   "engines": {
     "node": ">=14.0.0",
     "slidev": ">=0.19.3"
   },
   "homepage": "https://yasio.dev/",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/YasiOnFire/slidev-theme-yasio-dev.git"
   },
@@ -47,9 +49,10 @@
       }
     }
   },
+  "bugs": "https://github.com/YasiOnFire/slidev-theme-yasio-dev/issues",
   "release": {
     "branches": [
-      "main"
+      "master"
     ]
   }
 }
