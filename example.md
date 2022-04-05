@@ -29,7 +29,7 @@ i ***design*** and `develop` web apps,
 mobile, webpages, motion, and more.
 
 <!--
-tes
+test notes
 -->
 
 ---
