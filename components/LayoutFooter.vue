@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from '@vue/reactivity';
 
-const props = defineProps({
+defineProps({
   twitter: {
     type: String,
   },
