@@ -15,7 +15,6 @@
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
-    "semantic-release": "semantic-release",
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
@@ -25,9 +24,9 @@
     "theme-vitesse": "^0.1.14"
   },
   "devDependencies": {
+    "@iconify-json/ri": "^1.1.1",
     "@slidev/cli": "^0.29.2",
-    "playwright-chromium": "^1.20.2",
-    "semantic-release": "^19.0.2"
+    "playwright-chromium": "^1.20.2"
   },
   "homepage": "https://yasio.dev/",
   "repository": {
