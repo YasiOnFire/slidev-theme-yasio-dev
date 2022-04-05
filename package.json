@@ -28,10 +28,6 @@
     "playwright-chromium": "^1.20.2",
     "semantic-release": "^19.0.2"
   },
-  "engines": {
-    "node": ">=14.0.0",
-    "slidev": ">=0.19.3"
-  },
   "homepage": "https://yasio.dev/",
   "repository": {
     "type": "git",
