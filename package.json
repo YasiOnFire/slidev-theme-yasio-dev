@@ -10,6 +10,7 @@
     "yasio",
     "slidev"
   ],
+  "license": "MIT",
   "scripts": {
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
