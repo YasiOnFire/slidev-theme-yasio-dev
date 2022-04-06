@@ -1,6 +1,6 @@
 # slidev-theme-yasio-dev
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-yasio-dev?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-yasio-dev)
+[![NPM version](https://img.shields.io/npm/v/slidev-theme-yasio-dev?color=5918df&label=)](https://www.npmjs.com/package/slidev-theme-yasio-dev)
 
 A Yasio.dev theme for [Slidev](https://github.com/slidevjs/slidev).
 
