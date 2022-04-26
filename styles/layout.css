@@ -164,7 +164,37 @@ html.dark {
       @apply mt-10;
     }
   }
+
+  &.fact {
+    @apply text-center grid h-full;
+    h1 {
+      @apply text-8xl font-700;
+    }
+    h1 + p {
+      @apply font-700 text-2xl;
+    }
+  }
+
+  &.statement {
+    @apply text-center grid h-full;
+
+    h1 {
+      @apply text-6xl font-700;
+    }
+  }
+
+  &.quote {
+    @apply grid h-full;
+
+    h1 + p {
+      @apply mt-2;
+    }
+  }
 }
+
+
+
+
 @keyframes slidev-blink {
   0% {
     opacity: 0;
