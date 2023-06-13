@@ -193,7 +193,13 @@ html.dark {
 }
 
 
-
+.slidev-layout ol {
+  margin-left: 1em;
+}
+.slidev-layout ol li::marker {
+  font-family: "Consolas ligaturized v2", "Consolas", monospace;
+  color: var(--slidev-theme-primary);
+}
 
 @keyframes slidev-blink {
   0% {
