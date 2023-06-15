@@ -22,6 +22,11 @@ This theme provides the following layouts:
 
 > TODO:
 
+- `cover` - Cover page
+- `default` - Default layout
+- `center` - Centered layout
+- `section` - Section layout
+
 ## Components
 
 This theme provides the following components:
