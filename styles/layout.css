@@ -1,6 +1,7 @@
 :root {
   --slidev-theme-primary: #5918df;
   --slidev-theme-aside: #d4c2e0;
+  --code-font: 'Consolas ligaturized v2', 'Consolas', monospace;
 }
 html.dark {
   #slide-content {
@@ -199,6 +200,20 @@ html.dark {
 .slidev-layout ol li::marker {
   font-family: "Consolas ligaturized v2", "Consolas", monospace;
   color: var(--slidev-theme-primary);
+}
+
+.cursor-blinking {
+  position: relative;
+  &:after {
+    text-shadow: 0 0 5px #fff;
+    content: '█';
+    position: relative;
+    opacity: 0;
+    margin-left: 10px;
+    animation: slidev-blink 1.4s infinite;
+    font-size: inherit;
+    line-height: inherit;
+  }
 }
 
 @keyframes slidev-blink {
