@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from '@vue/reactivity';
 
-defineProps({
+const props = defineProps({
   twitter: {
     type: String,
   },
@@ -13,9 +13,10 @@ defineProps({
   },
   web: {
     type: String,
-  }
+  },
 })
-const date = computed(() => new Date().toLocaleDateString('en-US', {
+const _ = undefined;
+const date = computed(() => new Date().toLocaleDateString(_, {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
