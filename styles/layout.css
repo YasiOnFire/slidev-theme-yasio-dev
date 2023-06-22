@@ -3,6 +3,9 @@
   --slidev-theme-aside: #d4c2e0;
   --code-font: 'Consolas ligaturized v2', 'Consolas', monospace;
 }
+html,body {
+  background-color: #100e1b;
+}
 html.dark {
   #slide-content {
     background-color: #100e1b;
