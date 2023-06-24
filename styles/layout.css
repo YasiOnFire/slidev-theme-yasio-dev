@@ -196,7 +196,15 @@ html.dark {
   }
 }
 
-
+.slidev-layout li, [dir="ltr"] li, .slidev-layout [dir="ltr"] li {
+  margin-bottom: 0.8em;
+  line-height: 1.5em;
+}
+.slidev-layout ul.condensed-list, .slidev-layout ol.condensed-list {
+  li {
+    margin-bottom: 0.35em;
+  }
+}
 .slidev-layout ol {
   margin-left: 1em;
 }
