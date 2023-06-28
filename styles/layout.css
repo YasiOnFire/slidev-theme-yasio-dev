@@ -310,4 +310,8 @@ html.dark {
   .slidev-layout.default .slide-counter {
     position: absolute;
   }
+
+  .hide-in-print {
+    display: none;
+  }
 }
