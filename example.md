@@ -1,7 +1,6 @@
 ---
 theme: ./
-highliter: prism
-randomizeBg: false
+highlighter: shiki
 twitter: YasiOnFire
 github: YasiOnFire
 web: yasio.dev
@@ -13,7 +12,6 @@ Presentation slides for developers
 
 ---
 layout: intro
-randomizeBg: false
 twitter: YasiOnFire
 github: YasiOnFire
 web: yasio.dev
@@ -98,7 +96,6 @@ function updateUser(
 
 ---
 layout: center
-randomizeBg: true
 class: "text-center"
 ---
 
@@ -110,7 +107,6 @@ class: "text-center"
 layout: center
 class: "text-center"
 enableFooter: true
-randomizeBg: false
 twitter: YasiOnFire
 github: YasiOnFire
 web: yasio.dev
@@ -120,3 +116,86 @@ linkedin: janbaszczok
 # Thank you
 
 <span class="opacity-70 text-primary">I remain, [Yasio](https://yasio.dev)</span>
+
+---
+layout: chapter
+chapter: '01'
+eyebrow: Reusable components
+---
+
+# A new workshop
+
+Clear process. Visible decisions. Room for the speaker.
+
+---
+
+# Work and decisions
+
+<SdlcFlow
+  ai-label="AI"
+  human-label="Human"
+  aria-label="Development process and approvals"
+  :stages="[
+    { id: 'spec', title: 'Specification', ai: 'Options and acceptance criteria', human: 'Scope and decisions' },
+    { id: 'code', title: 'Implementation', ai: 'Code, tests, documentation', human: 'Risk and scope' },
+    { id: 'review', title: 'Review', ai: 'Diff, checks, evidence', human: 'Accept the change' }
+  ]"
+  :gates="[{ after: 'review', label: 'MR approval', owner: 'Codeowners' }]"
+/>
+
+---
+clicks: 1
+---
+
+# A repository ready for agents
+
+<RepoTree
+  :columns="[
+    { label: 'Context', entries: [
+      { text: 'repo/' },
+      { text: '├── AGENTS.md', kind: 'ai' },
+      { text: '├── README.md' },
+      { text: '├── apps/' },
+      { text: '└── docs/' },
+      { text: '    ├── architecture.md', kind: 'ai' },
+      { text: '    └── adr/', kind: 'ai' }
+    ] },
+    { label: 'Procedures', entries: [
+      { text: 'repo/' },
+      { text: '├── .agents/' },
+      { text: '│   └── skills/', kind: 'ai' },
+      { text: '├── .github/' },
+      { text: '│   └── copilot-instructions.md', kind: 'ai' },
+      { text: '└── package.json' }
+    ] }
+  ]"
+/>
+
+---
+
+# Media to record
+
+<MediaSlot
+  src="/media/agent-workflow.webm"
+  label="Agent prepares a change and reports verification results"
+  kind="video"
+  height="330px"
+  placeholder-label="TO ADD"
+/>
+
+---
+
+# The development loop
+
+<DevelopmentLoop
+  :steps="[
+    { title: 'Goal + spec', detail: 'Expected behavior' },
+    { title: 'Implementation', detail: 'Code and tools' },
+    { title: 'Verification', detail: 'Tests, UI, logs' },
+    { title: 'Review', detail: 'Diff and behavior' },
+    { title: 'Fixes', detail: 'Next iteration' },
+    { title: 'Feedback', detail: 'Product and users' }
+  ]"
+  human-label="Human"
+  :gates="['goal', 'risk', 'acceptance', 'production']"
+/>

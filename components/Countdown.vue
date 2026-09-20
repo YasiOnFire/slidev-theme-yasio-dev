@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from '@vue/reactivity';
-import { onMounted } from 'vue';
+import { computed, ref, onMounted } from 'vue';
 
 const minutes = ref(0)
 const seconds = ref(0)

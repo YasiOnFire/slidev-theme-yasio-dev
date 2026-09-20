@@ -2,5 +2,7 @@
 import '@slidev/client/styles/layouts-base.css'
 import './code.css'
 import './fonts.css'
+import './font-options.css'
 import './layout.css'
-
+import './content.css'
+import './patterns.css'

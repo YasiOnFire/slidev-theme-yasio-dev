@@ -1,0 +1,92 @@
+/* Code examples with a short, readable field guide. */
+.slidev-layout .code-guide {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
+  margin-top: 14px;
+}
+.slidev-layout .code-guide > div { min-width: 0; }
+.slidev-layout .code-guide .file-path { margin-top: 0; font-size: 11px; }
+.slidev-layout.code-slide .code-guide pre,
+.slidev-layout.code-slide .code-guide .slidev-code {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+.slidev-layout.code-slide .code-guide pre { padding: 15px 16px !important; }
+.slidev-layout .code-guide aside {
+  padding: 22px;
+  border: 1px solid var(--yasio-line);
+  border-top: 2px solid var(--yasio-yellow);
+  border-radius: 9px;
+  background: var(--yasio-panel);
+}
+.slidev-layout .code-guide aside > small {
+  display: block;
+  color: var(--yasio-muted);
+  font: 11px/1.4 var(--code-font);
+  letter-spacing: .12em;
+  margin-bottom: 24px;
+}
+.slidev-layout .code-guide aside > div + div { margin-top: 22px; }
+.slidev-layout .code-guide aside b { display: block; font-size: 19px; font-weight: 600; }
+.slidev-layout .code-guide aside p { margin: 6px 0 0; color: var(--yasio-muted); font-size: 16px; line-height: 1.45; }
+.slidev-layout .guide-caption { margin-top: 16px; color: var(--yasio-muted); font-size: 15px; }
+
+/* Taller memes preserve the full image instead of cropping captions. */
+.slidev-layout.approve-slide .split-punch { margin-top: 10px; }
+.slidev-layout.large-meme .meme-center { height: 420px; margin-top: 6px; }
+.slidev-layout.large-meme .meme-center img { border-radius: 12px; }
+
+/* Editable browser/chat meme: all text remains part of the presentation. */
+.slidev-layout .vibe-meme { display: grid; grid-template-columns: 1.05fr 1fr; gap: 28px; margin-top: 22px; align-items: start; }
+.slidev-layout .vibe-browser { overflow: hidden; border: 1px solid #4b435b; border-radius: 12px; background: #e7e4f0; }
+.slidev-layout .vibe-address { display: flex; align-items: center; gap: 14px; padding: 12px; background: #c9c3d8; font: 12px/1.5 var(--code-font); color: #3b344a; }
+.slidev-layout .vibe-dots { white-space: nowrap; font-size: 11px; letter-spacing: 3px; }
+.slidev-layout .vibe-address code { display: block; width: 100%; padding: 5px 10px; border-radius: 20px; background: #f9f8fc; font: inherit; color: inherit; }
+.slidev-layout .vibe-address code::before, .slidev-layout .vibe-address code::after { content: none; }
+.slidev-layout .vibe-site { position: relative; min-height: 226px; padding: 33px 28px; color: #251835; background: radial-gradient(ellipse at 100% 100%, #bfb0e4 0 32%, transparent 33%), radial-gradient(ellipse at 15% 10%, #f7eac2, transparent 65%), #e8e2f6; }
+.slidev-layout .vibe-site small { font: 10px/1.4 var(--code-font); text-transform: uppercase; letter-spacing: .12em; }
+.slidev-layout .vibe-site b { display: block; margin-top: 24px; font: 700 34px/1.1 var(--code-font); }
+.slidev-layout .vibe-site span { display: inline-block; margin-top: 20px; padding: 7px 13px; border-radius: 20px; background: #3d285d; color: #fff; font-size: 12px; }
+.slidev-layout .vibe-chat { display: grid; gap: 13px; padding-top: 2px; }
+.slidev-layout .vibe-chat > div { display: grid; grid-template-columns: 1fr 125px; align-items: center; gap: 14px; padding: 13px 15px; background: var(--yasio-panel); border: 1px solid var(--yasio-line); border-radius: 9px; }
+.slidev-layout .vibe-chat span { color: var(--yasio-muted); font-size: 17px; line-height: 1.3; }
+.slidev-layout .vibe-chat b { font: 700 22px/1.2 var(--code-font); color: var(--yasio-foreground); }
+.slidev-layout .vibe-meme + .business-callout { margin-top: 22px; font-size: 19px; }
+.slidev-layout.legal-slide .insight-cards.three { margin-top: 24px; }
+.slidev-layout.legal-slide .insight-cards.three article { padding: 21px; }
+.slidev-layout.legal-slide .insight-cards.three p { font-size: 17px; line-height: 1.5; }
+.slidev-layout.legal-slide .business-callout { margin-top: 22px; font-size: 18px; }
+.slidev-layout.legal-slide .legal-context { margin-top: 14px; color: var(--yasio-muted); font: 13px/1.4 var(--code-font); }
+
+/* Diff metadata, kept separate from the slide's general color palette. */
+.slidev-layout .punch-lines .diff-files { margin-bottom: 9px; }
+.slidev-layout .diff-stats { display: flex; gap: 18px; margin-bottom: 28px; }
+.slidev-layout .diff-stats b { font: 18px/1.4 var(--code-font); }
+.slidev-layout .diff-add { color: #67cf86; }
+.slidev-layout .diff-delete { color: #ed7787; }
+.slidev-layout .vibe-reference { display: block; width: 100%; height: 320px; object-fit: contain; border-radius: 12px; }
+
+/* One repository tree with its purpose explained alongside it. */
+.slidev-layout .repo-overview { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; margin-top: 12px; align-items: start; }
+.slidev-layout .repo-overview .yasio-repo-tree { --repo-tree-font-size: 15px; }
+.slidev-layout .repo-guide { padding-top: 9px; }
+.slidev-layout .repo-guide > div { display: grid; grid-template-columns: 35px 1fr; gap: 14px; margin-bottom: 28px; }
+.slidev-layout .repo-guide > div > span { color: var(--yasio-accent); font: 27px/1.2 var(--code-font); }
+.slidev-layout .repo-guide h3 { margin: 0 0 12px; font: 700 22px/1.25 var(--code-font); }
+.slidev-layout .repo-guide p { margin: 0; color: var(--yasio-muted); font: 18px/1.5 var(--body-font); }
+.slidev-layout .repo-guide > p { margin-top: 28px; font-size: 16px; }
+
+/* Native table preserves the six SDLC stages and both responsibilities. */
+.slidev-layout .responsibility-table { width: 100%; margin-top: 18px; border-collapse: separate; border-spacing: 0; table-layout: fixed; font: 16px/1.4 var(--body-font); border: 1px solid var(--yasio-line); border-radius: 10px; overflow: hidden; }
+.slidev-layout .responsibility-table .stage-column { width: 19%; }
+.slidev-layout .responsibility-table .ai-column { width: 43%; }
+.slidev-layout .responsibility-table .human-column { width: 38%; }
+.slidev-layout .responsibility-table th,
+.slidev-layout .responsibility-table td { padding: 7px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--yasio-line); }
+.slidev-layout .responsibility-table thead th { background: var(--yasio-panel); font-weight: 600; font-size: 16px; }
+.slidev-layout .responsibility-table tbody th { color: var(--yasio-foreground); font-weight: 600; }
+.slidev-layout .responsibility-table tbody td { color: var(--slidev-theme-aside); }
+.slidev-layout .responsibility-table tbody td:last-child { color: var(--yasio-foreground); border-left: 1px solid var(--yasio-line); background: color-mix(in srgb, var(--yasio-yellow) 3%, transparent); }
+.slidev-layout .responsibility-table tbody tr:last-child > * { border-bottom: 0; }

@@ -11,6 +11,15 @@
     "slidev"
   ],
   "license": "MIT",
+  "files": [
+    "components",
+    "layouts",
+    "public",
+    "setup",
+    "styles",
+    "example.md",
+    "README.md"
+  ],
   "scripts": {
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
@@ -18,16 +27,26 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
-    "@slidev/types": "^0.29.2",
     "codemirror-theme-vars": "^0.1.1",
     "prism-theme-vars": "^0.2.2",
     "theme-vitesse": "^0.1.14"
   },
+  "engines": {
+    "node": ">=22.12.0",
+    "slidev": ">=53.0.0"
+  },
+  "peerDependencies": {
+    "@slidev/client": "^53.0.0",
+    "vue": "^3.5.33"
+  },
   "devDependencies": {
-    "@iconify-json/ri": "^1.1.1",
-    "@slidev/cli": "^0.29.2",
+    "@iconify-json/ri": "^1.2.10",
+    "@slidev/cli": "53.0.0",
+    "@slidev/client": "53.0.0",
+    "@slidev/types": "53.0.0",
     "playwright-chromium": "^1.20.2",
-    "sass": "^1.63.4"
+    "sass": "^1.104.1",
+    "vue": "^3.5.33"
   },
   "homepage": "https://yasio.dev/",
   "repository": {
@@ -36,13 +55,15 @@
   },
   "slidev": {
     "colorSchema": "dark",
-    "highlighter": "prism",
+    "highlighter": "shiki",
     "defaults": {
       "aspectRatio": "16/9",
       "fonts": {
-        "sans": "Consolas ligaturized v2",
-        "serif": "Press Start 2P",
-        "mono": "Consolas ligaturized v2"
+        "provider": "none",
+        "sans": "Noto Sans",
+        "serif": "Noto Sans",
+        "mono": "Consolas ligaturized v2",
+        "local": ["Noto Sans", "IBM Plex Sans", "Source Sans 3", "Manrope", "Inter", "Consolas ligaturized v2", "Consolas"]
       }
     }
   },

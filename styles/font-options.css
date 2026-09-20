@@ -1,0 +1,11 @@
+/* Body-font playground: keep exactly one --body-font line active.
+   All five choices are bundled locally, so Google Fonts is not contacted at runtime.
+   Headings, code and numbers continue to use Consolas. */
+:root {
+  --body-font: 'Noto Sans', Arial, sans-serif;
+  /* --body-font: 'IBM Plex Sans', Arial, sans-serif; */
+  /* --body-font: 'Source Sans 3', Arial, sans-serif; */
+  /* --body-font: 'Manrope', Arial, sans-serif; */
+  /* --body-font: 'Inter', Arial, sans-serif; */
+  --code-font: 'Consolas ligaturized v2', 'Consolas', monospace;
+}
