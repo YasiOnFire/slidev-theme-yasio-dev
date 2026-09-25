@@ -27,8 +27,8 @@
 .slidev-layout.cover.section-slide h1 { font-size: 43px; line-height: 1.45; }
 .slidev-layout.cover.section-slide .section-subtitle { font-size: 23px; margin: 20px 0 0 20px; color: var(--slidev-theme-aside); }
 .slidev-layout.cover.section-slide .section-line { font-size: 16px; margin: 36px 0 0 20px; opacity: 0.62; }
-.slidev-layout .agenda-list { margin-top: 18px; font-size: 18px; }
-.slidev-layout .agenda-list li { margin-bottom: 9px; line-height: 1.3; }
+.slidev-layout .agenda-list { margin-top: 18px; font-size: 24px; }
+.slidev-layout .agenda-list li { margin-bottom: 9px; line-height: 1.25; }
 .slidev-layout .agenda-list li span { opacity: 0.6; }
 .slidev-layout .two-media { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: start; }
 .slidev-layout .media-label { margin-bottom: 14px; color: var(--slidev-theme-aside); font-size: 16px; }

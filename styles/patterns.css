@@ -35,11 +35,13 @@
 
 /* Taller memes preserve the full image instead of cropping captions. */
 .slidev-layout.approve-slide .split-punch { margin-top: 10px; }
+.slidev-layout .captioned-media { min-width: 0; margin: 0; }
+.slidev-layout .captioned-media figcaption { margin-bottom: 8px; color: var(--yasio-muted); font: 16px/1.4 var(--body-font); text-align: center; }
 .slidev-layout.large-meme .meme-center { height: 420px; margin-top: 6px; }
 .slidev-layout.large-meme .meme-center img { border-radius: 12px; }
 
 /* Editable browser/chat meme: all text remains part of the presentation. */
-.slidev-layout .vibe-meme { display: grid; grid-template-columns: 1.05fr 1fr; gap: 28px; margin-top: 22px; align-items: start; }
+.slidev-layout .vibe-meme { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; margin-top: 22px; align-items: start; }
 .slidev-layout .vibe-browser { overflow: hidden; border: 1px solid #4b435b; border-radius: 12px; background: #e7e4f0; }
 .slidev-layout .vibe-address { display: flex; align-items: center; gap: 14px; padding: 12px; background: #c9c3d8; font: 12px/1.5 var(--code-font); color: #3b344a; }
 .slidev-layout .vibe-dots { white-space: nowrap; font-size: 11px; letter-spacing: 3px; }
@@ -50,10 +52,10 @@
 .slidev-layout .vibe-site b { display: block; margin-top: 24px; font: 700 34px/1.1 var(--code-font); }
 .slidev-layout .vibe-site span { display: inline-block; margin-top: 20px; padding: 7px 13px; border-radius: 20px; background: #3d285d; color: #fff; font-size: 12px; }
 .slidev-layout .vibe-chat { display: grid; gap: 13px; padding-top: 2px; }
-.slidev-layout .vibe-chat > div { display: grid; grid-template-columns: 1fr 125px; align-items: center; gap: 14px; padding: 13px 15px; background: var(--yasio-panel); border: 1px solid var(--yasio-line); border-radius: 9px; }
+.slidev-layout .vibe-chat > .vibe-question { display: grid; grid-template-columns: 1fr 110px; align-items: center; gap: 12px; padding: 13px 15px; background: var(--yasio-panel); border: 1px solid var(--yasio-line); border-radius: 9px; }
 .slidev-layout .vibe-chat span { color: var(--yasio-muted); font-size: 17px; line-height: 1.3; }
 .slidev-layout .vibe-chat b { font: 700 22px/1.2 var(--code-font); color: var(--yasio-foreground); }
-.slidev-layout .vibe-meme + .business-callout { margin-top: 22px; font-size: 19px; }
+.slidev-layout .vibe-chat > .business-callout { margin-top: 7px; padding: 16px; font-size: 19px; }
 .slidev-layout.legal-slide .insight-cards.three { margin-top: 24px; }
 .slidev-layout.legal-slide .insight-cards.three article { padding: 21px; }
 .slidev-layout.legal-slide .insight-cards.three p { font-size: 17px; line-height: 1.5; }
@@ -66,7 +68,7 @@
 .slidev-layout .diff-stats b { font: 18px/1.4 var(--code-font); }
 .slidev-layout .diff-add { color: #67cf86; }
 .slidev-layout .diff-delete { color: #ed7787; }
-.slidev-layout .vibe-reference { display: block; width: 100%; height: 320px; object-fit: contain; border-radius: 12px; }
+.slidev-layout .vibe-reference { display: block; width: 100%; height: 410px; object-fit: contain; object-position: top center; border-radius: 12px; }
 
 /* One repository tree with its purpose explained alongside it. */
 .slidev-layout .repo-overview { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; margin-top: 12px; align-items: start; }
@@ -80,8 +82,8 @@
 
 /* Native table preserves the six SDLC stages and both responsibilities. */
 .slidev-layout .responsibility-table { width: 100%; margin-top: 18px; border-collapse: separate; border-spacing: 0; table-layout: fixed; font: 16px/1.4 var(--body-font); border: 1px solid var(--yasio-line); border-radius: 10px; overflow: hidden; }
-.slidev-layout .responsibility-table .stage-column { width: 19%; }
-.slidev-layout .responsibility-table .ai-column { width: 43%; }
+.slidev-layout .responsibility-table .stage-column { width: 20%; }
+.slidev-layout .responsibility-table .ai-column { width: 42%; }
 .slidev-layout .responsibility-table .human-column { width: 38%; }
 .slidev-layout .responsibility-table th,
 .slidev-layout .responsibility-table td { padding: 7px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--yasio-line); }

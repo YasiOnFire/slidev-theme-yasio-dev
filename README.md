@@ -28,6 +28,8 @@ This version targets Slidev 53 and Vue 3.5, with Node.js 22.12 or newer.
   and blinking cursor. Reduced-motion preferences disable the blink.
 - `media`: a full-slide screenshot with an optional editor tab, an uncropped image,
   a slide counter, and a labeled placeholder when the file is missing.
+- `media-sequence`: a full-slide sequence of screenshots, advanced by clicks or
+  rotated automatically, with uncropped images and missing-file placeholders.
 - `center`, `section`, `intro`, `fact`, `statement`, `quote`, `image`: supporting layouts.
 
 ```md
@@ -57,6 +59,39 @@ label: review / findings
 Place media files in the deck's `public` directory. `media` and `alt` are required;
 `label` is optional. This layout displays static images and GIFs; use `MediaSlot`
 for video controls within a slide.
+
+```md
+---
+layout: media-sequence
+interval: 2000
+mediaItems:
+  - src: /media/ide-one.png
+    alt: First development environment
+    label: IDE / first view
+  - src: /media/ide-two.png
+    alt: Second development environment
+    label: IDE / second view
+---
+```
+
+`mediaItems` is an array of images with required `src` and `alt`, plus an optional
+`label`. `interval` is in milliseconds: 2000 by default, with a 500 minimum.
+The sequence loops and resets to the first image when re-entering the slide.
+Only the active audience slide rotates. Presenter previews, print output,
+reduced-motion mode and hidden browser tabs show the first image without a timer.
+Leaving or unmounting the slide stops rotation. Empty lists and missing files keep
+a labeled placeholder visible. Use static images for predictable print output.
+
+For manual navigation, set `advance: click` and `clicks` to the number of images
+minus one. The first image is visible immediately; each forward/backward Slidev
+click selects the corresponding image. This also follows the presenter's click
+state and works with reduced motion. Manual mode never starts a timer.
+
+```yaml
+layout: media-sequence
+advance: click
+clicks: 1 # two mediaItems, one transition
+```
 
 ## Components
 
@@ -131,6 +166,34 @@ Optional `segments` highlight only selected parts of a path. A segment without
 `kind` stays neutral. Set `--repo-accent`, `--repo-adapter-accent`, `--repo-muted`,
 or `--repo-tree-font-size` on the component to tune the tree without changing the
 theme palette. One column spans the full component; multiple columns share it.
+
+### AutonomySlider
+
+A visual metaphor for the amount of autonomy delegated to an agent. The number,
+track fill and thumb move together around the chosen value; this is not a model
+setting or an interactive input.
+
+```html
+<AutonomySlider
+  :value="75"
+  :amplitude="3"
+  :period-ms="11000"
+  left-label="Ask about each step"
+  right-label="Complete the approved scope"
+/>
+```
+
+`value` defaults to 75, `amplitude` to 3 percentage points, and `periodMs` to
+11000. Values stay within 0–100; the period has a 4000 ms minimum. `animate`
+defaults to `true`; use `:animate="false"` for a static illustration.
+`leftLabel` and `rightLabel` customize the ends of the track. `metaphorLabel`
+customizes the accessibility label only; add any visible explanation in the deck.
+
+Animation runs on the active audience slide and the presenter's current slide.
+Inactive slides, next-slide previews, print output, reduced-motion mode and hidden
+tabs show the base value.
+The animation frame is cancelled on leaving or unmounting, and no background
+timer is retained. The component reuses the theme's `.autonomy*` styles.
 
 ### DevelopmentLoop
 

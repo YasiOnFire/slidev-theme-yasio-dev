@@ -99,6 +99,7 @@ watch(() => props.media, () => {
   min-width: 0;
   min-height: 0;
   margin: 0;
+  border: 1px solid var(--yasio-line, #332a42);
 }
 
 .media-stage > img {
